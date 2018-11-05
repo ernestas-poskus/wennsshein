@@ -12,3 +12,11 @@ Stanislaus Mink von Wennsshein (also Wenusheim, Winusheim) was the pseudonym of 
 7 - K, C
 8 - F, V
 9 - B, P
+
+How to:
+
+$ cargo run -q rust
+>INPUT: rust
+OUTPUT: 4 01
+
+Word rust translates to 401
