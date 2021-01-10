@@ -36,10 +36,9 @@ fn main() {
 }
 
 fn wennsshein(letter: char, next_letter: Option<&char>) -> Option<usize> {
-    if (letter == 's' || letter == 'c') && next_letter == Some(&'h') {
-        Some(6)
-    } else {
-        match letter {
+    match (letter, next_letter) {
+        ('s', Some('h')) | ('c', Some('h')) => Some(6),
+        _ => match letter {
             's' | 'z' => Some(0),
             't' | 'd' => Some(1),
             'n' => Some(2),
@@ -52,6 +51,6 @@ fn wennsshein(letter: char, next_letter: Option<&char>) -> Option<usize> {
             'b' | 'p' => Some(9),
 
             _ => None,
-        }
+        },
     }
 }
