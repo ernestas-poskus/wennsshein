@@ -2,5 +2,6 @@
 name = "wennsshein"
 version = "0.1.0"
 authors = ["Ernestas Poskus <ernestas.poskus@gmail.com>"]
+edition = "2018"
 
 [dependencies]
